@@ -1,0 +1,551 @@
+body {
+  background-color: #1B842C;
+}
+
+.bg{
+  background: #09680a;
+  padding: 0;
+}
+
+.ditto-default-container{
+  max-width: 1320px;
+}
+
+/* top tab start */
+.prematch-inplay-field{
+  margin-left: -15px;
+}
+nav > div a.nav-item.nav-link.navitemhead.active {
+  content: "";
+  color: #000;
+  border: none;
+}
+nav > div a.nav-item.nav-link.navitemhead:hover{
+  border: none;
+}
+.nav-fill .nav-item, .nav-fill>.nav-link.navitemhead {
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+/* top tab end */
+
+
+
+nav > .nav.nav-tabs.home-tab{
+    border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+  }
+
+  nav > div a.nav-item.nav-link.navitemc, nav > div a.nav-item.nav-link.navitemc.active {
+    border: none;
+    padding: 6px;
+    border-radius: 0;
+    position: relative;
+}
+
+
+.nav-tabs 
+.navbar-active-bg 
+.nav-item.show 
+.nav-link, 
+.nav-tabs 
+.nav-link.active {
+  color: #020407;
+  background-color: #fec107;
+  border: none;
+  border-radius: 0;
+}
+.nav-tabs 
+.navbar-active-bg 
+.nav-item.show 
+.nav-link, 
+.nav-tabs 
+.nav-link:hover {
+  border: none;
+}
+
+nav > div a.nav-item.nav-link.navitemc.active:after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 40%;
+  border: 10px solid transparent;
+  border-top-color: #fec107;
+}
+
+nav > div a.nav-item.nav-link.navitemc:hover,
+nav > div a.nav-item.nav-link.navitemc:focus
+{
+  border: none;
+    background: #fec107;
+    border-radius:0;
+    transition: background 0.20s linear;
+}
+
+.nav-link.my-bet-inactive {
+  display: block;
+  padding: .5rem .3rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+  background-color: .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.side-nav-main{
+  margin-top: 100px;
+}
+.nav-tabs.side-nav{
+  border-bottom: 0;
+}
+
+.inner-tab-field{
+  margin: 0;
+}
+
+.inner-tab-bg{
+  margin-top: -40px;
+}
+
+.nav.nav-tabs.side-nav{
+  background-image: linear-gradient(180deg, #125c11, #2b742b);
+  }
+
+.odds__straight-content{
+  display: flex;
+  justify-content: space-between;
+}
+.odds__straight-body-content{
+  width: 80%;
+  color: #fff;
+}
+
+.odds__straight-point{
+  width: 10%;
+  margin-right: 10px;
+}
+.odds__straight-close-icon{
+  width: 5%;
+}
+
+.odds__straight-body-text{
+  margin-top: -12px;
+  color: #b4d7b6;
+}
+.odds__straight-point p{
+  color: #fff;
+  margin-right: 5px;
+}
+.odds__straight-close-icon{
+  color: #62ae63;
+}
+
+.odds__straight-delete-icon{
+  color: #56af55;
+  font-size: 18px;
+}
+.odds__straight-delete-icon span{
+  margin: 3px;
+}
+.odds__inner-content-field{
+  padding: 10px;
+}
+.odds__inner-content-field hr{
+  color: #11d257;
+  width: 100%;
+}
+
+.odds__straight-empty-field{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.odds__straight-stake-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.odds__straight-login-btn{
+  display: grid;
+  margin-bottom: 5px;
+}
+
+.odds__stake-text{
+  width: 70%;
+  color: #fff;
+}
+.odds__stake-amount{
+  width: 30%;
+  background-color: #068033;
+}
+
+.odds__stake-amount p{
+  color: #fff;
+  text-align: right;
+  display: grid;
+  padding-right: 10px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.odds__straight-potential-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.odds__potential-text{
+  width: 80%;
+  color: #b3d8b3;
+}
+.odds__potential-amount{
+  width: 20%;
+  color: #fff;
+  text-align: right;
+  margin-right: 5px;
+}
+
+/* custom checkbox start*/
+.odds__checkb {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 5%;
+}
+
+/* Hide the browser's default checkbox */
+.odds__checkb input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.odds__checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #156d35;
+  margin-top: 3px;
+  border: 1px solid #4caf50;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.odds__checkb input:checked ~ .odds__checkmark2 {
+  background-color: #4caf50;
+}
+
+/* Create the checkmark2/indicator (hidden when not checked) */
+.odds__checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark2 when checked */
+.odds__checkb input:checked ~ .odds__checkmark2:after {
+  display: block;
+}
+
+/* Style the checkmark2/indicator */
+.odds__checkb .odds__checkmark2:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* custom checkbox end*/
+
+
+.inner-tab-bg .nav-link.my-bet-inactive.active {
+  color: #fff;
+  width: 100%;
+  border-bottom:2px solid #f2c511;
+  background-color: #006900;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.nav-tabs.my-bet-inactive .nav-link {
+  width: 140px;
+}
+
+ul.inner-tab-bg .my-bet-inactive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+ul.inner-tab-bg li:nth-child(1){
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul.inner-tab-bg li:nth-child(2){
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.inner-tab-bg li:nth-child(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.odds__nav-backgroundtop{
+  background-image: linear-gradient(180deg, #125c11, #2b742b);
+  border: none;
+  height: 40px;
+  font-size: 16px;
+}
+.odds__nav-backgroundtop li a{
+  color:#fff;
+}
+.odds__nav-background{
+  background-image: linear-gradient(180deg, #125c11, #2b742b);
+  border: none;
+}
+
+.odds__grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #0a6b0a;
+}
+.odds__grid-item {
+  border: 1px solid #3cb067;
+  padding: 5px;
+  font-size: 15px;
+  background: #0a6b0a;
+}
+
+.game-title{
+    border: 1px solid #3cb067;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    background: #0a6c09;
+}
+.all-match-list1 p{
+    color: #fff;
+}
+.match-icon .vs{
+  height: 30px; 
+  margin: 10px 60px;
+}
+
+
+
+.odds__content-field{
+  background: #fec107;
+  text-align: center;
+}
+.odds__content-field p{
+  margin: 0;
+  color: #000;
+}
+
+.left-text{
+  color: white;
+}
+
+
+.content-text{
+  background: #068033;
+}
+.content-text1{
+  background: #108d3f;
+  height: 65px;
+  margin: 5px 0px;
+  padding: 20px;
+  border: 2px solid #11d257;
+}
+.content-text p{
+  margin: 5px 5px 5px 5px;
+  padding: 10px;
+}
+
+.content-bg{
+  background: #21472e;
+  text-align: center;
+}
+
+.money-border{
+  border: 1px solid #029b3a;
+}
+
+
+
+.content-colour{
+  color: #efc569;
+}
+
+.content-colour1{
+  color: white;
+}
+
+
+.tab-content>.tab-pane {
+  margin-top: -24px;
+}
+.tab-content.px-3 {
+  padding-right: 0!important;
+  padding-left: 0!important;
+  padding-bottom: 0 !important;
+}
+
+.play-list-title{
+  display: flex;
+  margin-left: 30px;
+}
+.play-list-title img{
+  color: rgb(216, 83, 83);
+}
+
+.play-list-title h5{
+  margin-left: 10px;
+  margin-top: -4px;
+}
+
+.tab-container {
+  margin: 0;
+  padding: 0;
+}
+
+ul.side-nav li{
+  width: 50%;
+}
+
+.login-bet-field {
+  background-color: #016a01;
+  width: 100%;
+  border: 1px solid #2bc448;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.nav.nav-tabs.home-tab{
+  border-bottom: 1px solid #52b751;
+}
+.nav-tabs.side-nav .nav-link {
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  text-align: center;
+}
+.nav-tabs.side-nav1 .nav-link {
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  text-align: center;
+}
+.nav-tabs.side-nav1{
+  border-bottom: 1px solid #52b751;
+}
+.odds__payment{
+  position: relative;
+}
+.bet-slit-notice{
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background-color: #fff;
+  font-size: 15px;
+
+  border: 2px solid #017b02;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.odds__mybets-payment{
+  color: #fff;
+}
+/************************************************/
+#myTabContent{
+  margin-top: 26px;
+}
+.odds__nav-background li a{
+  color:#fff;
+}
+/************************************************/
+
+@media (max-width: 1700px) {
+  .bet-slit-notice {
+    position: absolute;
+    right: 15px;
+}
+
+}
+@media (max-width: 1326px) {
+  .bet-slit-notice {
+    position: absolute;
+    right: 80px;
+}
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .login-bet-field {
+    background-color: #016a01;
+    width: 100%;
+    border: 1px solid #2bc448;
+}
+}
+@media (max-width: 375px) {
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.odds__grid-item {
+  border: 1px solid #3cb067;
+  padding: 0px;
+  font-size: 15px;
+}
+.match-icon .vs{
+  height: 30px;
+  margin: 10px 30px;
+}
+.bet-slit-notice {
+  right: 20px;
+}
+
+}

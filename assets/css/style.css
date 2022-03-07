@@ -1,0 +1,1510 @@
+
+*{
+padding: 0;
+margin: 0;
+font-family: arial;
+box-sizing: border-box;
+}
+body{
+    background-color: #1B842C;
+    position: relative;
+}
+
+/* big font add */
+
+@font-face {
+    font-family: 'webfont';
+    src: url('../font/webfont.ttf');
+ }
+
+.background-image::before {
+    content: "";
+    height: 943px;
+    width: 100%;
+    position: absolute;
+    top: -104px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(148, 27, 27, 0) 90%,
+    #1c842d), url('../images/3d-abstract-background-with-futuristic-particles.png');
+    background-size: cover;
+    z-index: -1;
+    opacity: .2;  
+}
+:root {
+    --main-bg-color: coral;
+    --main-border-color:#6e6f6e;
+  }
+
+.navbar-light.login-navbar .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: #fff;
+}
+
+.navbar.login-navbar {
+    background-color: rgb(12 45 15 / 60%);
+    position: fixed;
+    width: 100%;
+    top: 0 !important;
+    box-shadow: 0 5px 4px -2px #302222;
+    z-index: 9999999;
+}
+
+ .navbar-light.login-navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.navbar-light.login-navbar .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.logo img{
+    width: 250px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+/* refer css start */
+
+.refer-button {
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #CFCFCF 100%);
+    color: #118D3F;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px 24px;
+    font-size: 18px;
+}
+.refer-button:hover {
+   text-decoration: none;
+   color: #118D3F;
+}
+
+.refer-button img{
+    width: 20px;
+}
+
+/* refer css end */
+
+
+/* notification css start */
+.dropdown-toggle:after,
+.notification-bell.dropdown-toggle:after {
+  border: none;
+}
+
+.navbar-nav .notification-dropdown {
+    min-width: 420px;
+    border: 1px solid rgb(16, 138, 61);
+    background-color: rgb(41, 43, 40);
+    padding: 15px 15px 20px;
+    position: absolute;
+    right: 130px;
+}
+
+.notification-dropdown ul{
+    margin: 0;
+    padding: 0;
+    display: block !important;
+}
+
+.notification-dropdown ul li{
+    list-style: none;
+    margin-right: 0 !important;
+}
+
+.notification-dropdown ul li.drop-header{
+    font-size: 18px;
+    color: #00DB51;
+    text-transform: uppercase;
+    border-bottom: 1px solid #313a34;
+    padding: 8px 0;
+    font-weight: 300;
+}
+
+.notification-dropdown ul li.drop-time{
+    font-size: 16px;
+    color: #FFDF9F;
+    position: relative;
+}
+
+.notification-dropdown ul li.drop-time span{
+    position: absolute;
+    right: 0;
+    top: -8px;
+    background: #292B28;
+    padding: 0 6px;
+}
+
+.notification-dropdown ul li a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #313a34;
+    padding: 12px 0;
+    display: flex;
+}
+
+.notification-dropdown ul li:last-child a{
+    border-bottom: 0;
+}
+
+.notification-dropdown ul li a .image{
+    margin-right: 15px;
+    width: 42px;
+}
+
+.notification-dropdown ul li a .text{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* notification css end */
+
+/*
+=====================================================
+Refer Modal Design
+=====================================================
+*/
+
+.default-modal {
+    background-image: url(../img/popup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.default-modal .modal-content{
+    border: none;
+    background: rgb(155 160 175 / 8%);
+    position: relative;
+}
+
+.default-modal .close{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    height: 43.11px;
+    width: 43.11px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 1;
+    background: #118D3F;
+    color: #fff;
+    display: block;
+    z-index: 99;
+}
+
+.btn-modal-bet.white{
+    background: #DEDEDE;
+    color: #2A2A2A;
+}
+
+.btn-modal-bet.green{
+    background: #118D3F;
+    color: #fff;
+}
+
+.team-modal{
+    padding: 80px 0 15px;
+    color: #fff;
+}
+
+.team-modal .form-control{
+    height: 60px;
+    font-size: 14px;
+    border-color: #00DB51;
+    background: transparent;
+    color: #fff;
+}
+
+.team-modal .form-control:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.modal-team-label{
+    margin-bottom: 50px;
+}
+
+.modal-team-label label{
+    margin-top: 4px;
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.modal-team-label label span{
+    color: #00DB51;
+}
+
+.refer-button{
+    margin: 20px;
+}
+
+/*
+=====================================================
+Refer Modal Design end
+=====================================================
+*/
+
+
+
+
+/* login */
+.nav-item ul li:last-child {
+    margin-right: 35px;
+}
+
+.login-drop .dropdown-toggle {
+    display: flex;
+}
+
+ .menu-login a, .menu-login a:hover {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 12px;
+} 
+.login-drop .dropdown-profile {
+    min-width: 335px;
+    border: 1px solid #108a3d;
+    background-color: #292B28;
+    padding: 12px 0 20px;
+} 
+.login-drop .dropdown-profile {
+    transform: translate3d(35px, 6px, 0px) !important;
+} 
+.login-drop .dropdown-toggle:after, 
+.notification-bell.dropdown-toggle:after {
+    border: none;
+
+} 
+.login-drop [data-toggle="dropdown"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f107";
+    color: #00DB51;
+    right: -30px;
+    top: 3px;
+    position: absolute;
+    font-size: 25px;
+}
+.login-drop .dropdown-profile a {
+    color: #DEDEDE;
+    font-size: 20px;
+    padding: 12px 25px;
+} .menu-login a, .menu-login a:hover {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.login-drop .dropdown-profile {
+    min-width: 335px;
+    border: 1px solid #108a3d;
+    background-color: #292B28;
+    padding: 12px 0 20px;
+} .login-drop .dropdown-profile {
+    min-width: 335px;
+    border: 1px solid #108a3d;
+    background-color: #292B28;
+    padding: 12px 0 20px;
+}
+ .login-drop .dropdown-profile {
+    transform: translate3d(35px, 6px, 0px) !important;
+}
+ .login-drop .dropdown-profile a:hover {
+    background-color: transparent;
+}
+.login-drop .dropdown-profile:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-135deg);
+    top: -11px;
+    right: 15px;
+    background: #292B28;
+    border-bottom: 1px solid #108a3d;
+    border-right: 1px solid #108a3d;
+}
+
+
+/* login end */
+
+
+.homepage__slider-container{
+    margin-top: 100px;
+}
+
+.homepage__carousel-field{
+   border-radius: 8px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+}
+
+.homepage__carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+
+  .homepage__carousel img{
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  .carousel .carousel-indicators li {
+    width: 15px;
+   height: 15px;
+   border-radius: 100%;
+ }
+
+/* banner text */
+
+.homepage__banner-left-block {
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 80px;
+    top: 60%;
+    transform: translate(5%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+
+.homepage__banner-left-block h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.homepage__banner-left-block h3 {
+    color: #F7C166;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.homepage__banner-left-block h4 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.homepage__banner-left-block h4 span {
+    text-transform: uppercase;
+}
+
+.homepage__banner-button-block{
+    margin-top: 30px;
+}
+
+.homepage__banner-button-block .homepage__bet-now-button {
+    width: 216px;
+    border: 0;
+    box-shadow: rgb(0 0 0) 0px 0px 15px;
+    background: linear-gradient( #b41e1d, #372525);
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    font-family: system-ui;
+}
+
+.homepage__banner-button-block .homepage__how-it-works {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+
+/* line */
+
+.main-body-left-top-dv {
+    width: 100%;
+    height: 5px;
+    background: #fec107;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ditto-default-container{
+    max-width: 1700px;
+}
+
+/* cover image zoom start*/
+
+/* .slider-part{
+      position: relative;
+      transition: 0.5s all ease-in-out;
+  }
+.slider-part:hover{
+    transform: scale(1.02);
+  } */
+
+  /* cover image zoom end*/
+
+  
+/* socker lig */
+
+.homepage__single-user-field {
+    justify-content: center;
+    align-items: center;
+    background: transparent;  
+}
+.dittoOffers .homepage__single-user-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.dittoOffers .homepage__single-user-image{
+    width: 15%;
+}
+
+.dittoOffers .homepage__single-user-name{
+    width: 70%;
+}
+
+.dittoOffers .homepage__single-user-icon {
+    width: 15%;
+    text-align: right;
+    margin-right: 7px;
+}
+
+.dittoOffers .homepage__single-user-icon i {
+    color: #fec107;
+    font-size: 18px;
+}
+
+
+.leader-board .homepage__single-user-content {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.homepage__see-all-offer a {
+    margin-bottom: 0px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.homepage__see-all-offer{
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 17px;
+}
+.homepage__see-all-offer i{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.dittoOffers .homepage__see-all-offer, .leader-board .homepage__see-all-offer {
+    padding: 40px 0px 20px;
+}
+
+.leader-board .homepage__single-user-image {
+    width: 15%;
+}
+.leader-board .homepage__single-user-name{
+    width: 50%;
+}
+
+
+.leader-board .homepage__single-user-rate{
+    width: 20%;
+}
+
+.leader-board .homepage__single-user-icon-lb{
+    width: 15%;
+}
+
+.homepage__single-user-image img{
+    width: 40px;
+    height: 40px;
+    border:2px solid var(--main-border-color);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.homepage__single-user-name p {
+    font-size: 18px;
+    color: #fff;
+    margin: 16px 15px;
+}
+
+
+.homepage__single-user-name i{
+    margin: 0;
+    color: #fff;
+}
+
+.homepage__single-user-icon-lb {
+    font-size: 11px;
+    text-align: center;
+}
+
+.color-green {
+    color: #01db51;
+    font-size: 15px;
+}
+
+.homepage__color-red {
+    color: #e05442;
+    font-size: 15px;
+}
+
+.homepage__single-user-icon-lb p {
+    color: #c6bb8d;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.homepage__single-user-rate p {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.homepage__single-user-field hr {
+    border-color: #00db51;
+    opacity: 0.4;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ditto match start */
+.leader-board .homepage__single-user-match-image {
+    width: 15%;
+}
+.leader-board .homepage__single-user-match-name{
+    width: 50%;
+}
+
+.leader-board .homepage__single-user-match-message{
+    width: 20%;
+}
+
+.leader-board .homepage__single-user-icon-match-lb{
+    width: 15%;
+}
+
+.homepage__single-user-match-image img{
+    width: 40px;
+    height: 40px;
+    border:2px solid var(--main-border-color);
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.homepage__single-user-match-name p {
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.homepage__single-user-match-name i{
+    margin: 0;
+    color: #02da51;
+}
+.homepage__single-user-match-name .str  i {
+    color: #f1b531;
+    font-size: 13px;
+}
+
+.homepage__single-user-icon-match-lb img{
+    width: 38px;
+}
+
+.homepage__single-user-match-message img{
+    width: 30px;
+}
+/* ditto match end */
+
+
+
+/* title menu list */
+.homepage__menu-list-body{
+    position: relative;
+    background: linear-gradient(180deg, #000301, #00270f), transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(41, 173, 72);
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+    max-width: 100%;
+}
+
+.homepage__coin-icon-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.18;
+    z-index: 1;
+    width: 37%;
+    width: 35%;
+}
+
+.homepage__coin-icon-bg img{
+    width: 100%;
+}
+
+.homepage__title-menu-field {
+    font-family: webfont;
+    z-index: 2;
+    position: relative;
+}
+
+
+.homepage__title-menu-content {
+    margin: 30px;
+    text-align: center;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden;
+}
+
+
+.homepage__title-menu-content li {
+    list-style-type: none;
+    padding: 0px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.homepage__title-menu-content li a{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: webfont;
+    color: #eeeeee;
+    letter-spacing: 4px;
+
+  -webkit-text-fill-color:transparent; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 254, 254);
+}
+
+
+
+.homepage__title-menu-content li:hover {
+    transform: scale(1.2);
+}
+
+.homepage__title-menu-content li:hover a{
+    text-decoration: none;
+    color: #fec107;
+    -webkit-text-stroke-color: #FEC107;
+    -webkit-text-fill-color:#FEC107;
+    
+}
+
+.dont-use-href{
+    color: #eeeeee;
+}
+
+
+
+/* about information more connect  */
+
+
+.homepage__more .homepage__title{
+    color: #1df05b;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.homepage__connect-social .homepage__title{
+    color: #1df05b;
+    font-size: 20px;
+}
+
+
+
+.homepage__more-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.homepage__more-menu li{
+    list-style-type: none;
+    color: #d3f7d4;
+}
+.homepage__more-menu li a {
+    color: rgb(211, 247, 212);
+    font-size: 18px;
+    margin: 15px 0px 15px 15px;
+}
+.homepage__more-menu li a:hover{
+    text-decoration: none;
+}
+
+.homepage__connect{
+    margin: auto;
+}
+
+.homepage__connect-social h3 {
+    color: #1df05b;
+    margin-bottom: 25px;
+}
+
+.homepage__connect-social a svg{
+    margin: 15px;
+}
+
+
+/* about us */
+
+.homepage .homepage__AboutUs {
+    border-radius: 10px;
+    border: 1px solid #29ad48;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: linear-gradient(180deg, #000100, #002c06), transparent;
+}
+
+.homepage .homepage__AboutUs_Content{
+    padding: 35px;
+}
+.homepage .homepage__About{
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.homepage .homepage__About .homepage__title{
+    color: #fff;
+    font-weight: bold;
+}
+
+.homepage .homepage__About p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Ditto Match */
+
+
+.homepage__card-bg-image {
+    position: relative;
+    background: linear-gradient(360deg, #0f3d16, #0d2410);
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid #00c039;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 5);
+    transition: 0.5s all ease-in-out;
+}
+
+.homepage__card-bg-image:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.homepage__card-bg-image .homepage__bg-coin {
+    position: absolute;
+    opacity: .2;
+    width: 200px;
+}
+
+.card-bg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.homepage__match-result-card{
+    width: 90%;
+}
+
+.homepage__match-result-card-header {
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 15px;
+}
+.homepage__match-result-card-header i {
+    font-size: 22px;
+    color: #f1b531;
+}
+
+.homepage__match-result-card-header h3 {
+    margin-top: 8px;
+    color: #fec107;
+    font-size: 26px;
+}
+
+.homepage__match-result-card-body {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00DB51;
+    background: linear-gradient(360deg,  #0e3312, 50%, transparent);
+    border-radius: 10px 10px 10px 10px;
+    background-size: cover;
+    z-index: 1;
+    margin-top: 7px;
+}
+
+span.team-result-box {
+    width: 40px;
+    height: 41px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    background: rgb(42 42 42 / 30%);
+}
+.homepage__match-result-card-body .left-team img, .homepage__match-result-card-body .right-team img {
+    max-height: 70px;
+}
+.team-result-time-box {
+    color: #00DB51;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.left-team {
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.right-team {
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.team-result-box-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
+/* more and contact */
+
+
+.homepage__more-contact-field {
+    border-radius: 10px;
+    border: 1px solid #29ad48;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: linear-gradient(180deg, #000100, #002c06), transparent;
+}
+
+.homepage__more-contact-content-field {
+    padding: 18px 0;
+}
+.homepage__more-contact {
+    text-align: center;
+}
+.homepage__more-contact .col-md-6{
+    display: flex;
+    justify-content: center;
+}
+.homepage__more-contact p{
+    text-align: center;
+}
+
+.homepage__more-contact .homepage__title{
+    color: #fff;
+}
+
+.homepage__more-contact p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* Dittopeer Crypto */
+.homepage__crypto-field {
+    border-radius: 10px;
+    border: 1px solid #29ad48;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: linear-gradient(180deg, #000100, #002c06), transparent;
+}
+
+.homepage__crypto-content-field {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 23px;
+    justify-content: center;
+}
+
+.homepage__crypto-content-field img{
+    width: 7%;
+}
+.homepage__crypto-content-field h5 {
+    text-align: center;
+    font-family: webfont;
+    margin-left: 45px;
+    margin-bottom: 0px !important;
+    font-size: 68px;
+    color: white;
+    letter-spacing: 4px;
+}
+
+/* footer css */
+
+.footer-tor-border {
+    width: 100%;
+    height: 11px;
+    background: rgb(42 42 42 / 30%);
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1800px) {
+    .ditto-default-container{
+        max-width: 1400px;
+    }
+}
+@media (max-width: 1400px) {
+    .ditto-default-container{
+        max-width: 1260px;
+    }
+    .homepage__match-result-card-header h3 {
+        margin-top: 8px;
+        color: #fec107;
+        font-size: 20px;
+    }
+    .homepage__match-result-card-header i {
+        font-size: 20px;
+        color: #f1b531;
+    }
+    .homepage .homepage__About .homepage__title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1147px) {
+    .ditto-default-container{
+        max-width: 960px;
+    }
+    .homepage__more .homepage__title {
+        color: #1df05b;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .homepage__crypto-content-field img {
+        width: 10%;
+    }
+    .homepage__crypto-content-field h5 {
+        text-align: center;
+        font-family: webfont;
+        margin-left: 45px;
+        margin-bottom: 0px !important;
+        font-size: 70px;
+        color: white;
+    }
+    .homepage__single-user-match-name .str  i {
+        font-size: 13px;
+    }
+    .homepage__connect-social .homepage__title {
+        color: #1df05b;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .leader-board .homepage__single-user-match-image {
+        width: 16%;
+    }
+    .leader-board .homepage__single-user-match-name {
+        width: 53%;
+    }
+    .leader-board .homepage__single-user-match-message {
+        width: 18%;
+    }
+    
+    .homepage__single-user-match-name .str i {
+        color: #f1b531;
+        margin: -1px;
+    }
+    .homepage__single-user-match-message img {
+        width: 32px;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-content {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .login-drop .dropdown-profile {
+        min-width: 335px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 12px 0 20px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .refer-button{
+        padding: 15px;
+    }
+    .notification-btn{
+        padding: 15px;
+    }
+    .navbar-nav .dropdown-menu .drop_tab{
+        position: absolute;
+        float: none;
+    }
+
+
+    .navbar-nav  .notification-dropdown {
+        min-width: 380px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 15px 15px 20px;
+        position: absolute;
+        right: 15px;
+    }
+
+  
+}
+
+
+.FooterBottom {
+    align-items: center;
+    background: linear-gradient(#118d3f,#2a2929);
+    border-radius: 10px 10px 0 0;
+    color: #00ff5e;
+    display: flex;
+    font-size: 16px;
+    height: 80px;
+    justify-content: center;
+    width: 100%;
+}
+
+.FooterBottom__Higlight {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+.FooterBottom__Separator {
+    color: #fff;
+    margin: 0 30px;
+}
+
+.FooterBottom__Higlight {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+
+    .logo img {
+        width: 220px;
+    }
+
+    .homepage__card-bg-image {
+        background-color: #135014;
+        border-radius: 5px;
+        display: flex;
+        border: 2px solid #232f25;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 15px rgb(0 0 0 / 5);
+    }
+
+    .homepage__match-result-card-header h3 {
+        font-size: 25px;
+        margin-top: 8px;
+        color: #f1b531;
+    }
+
+    .homepage__tab-padding.col-md-3,.col-md-4{
+            position: relative;
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+    }
+
+    .homepage__crypto-content-field {
+        padding: 23px;
+        display: flex;
+        align-items: center;
+    }
+    .homepage__title-menu-content li {
+        padding: 0;
+    }
+    .homepage__crypto-content-field img {
+        width: 11%;
+    }
+    .homepage__crypto-content-field h5 {
+        font-size: 90px;
+        margin-top: 0px;
+    }
+  
+
+    .nav-content {
+        justify-content: end;
+        position: relative;
+    }
+
+    .refer-button{
+        padding: 15px;
+    }
+    .notification-btn{
+        padding: 15px;
+    }
+    .login-drop .dropdown-profile {
+        min-width: 335px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 12px 0 20px;
+        position: absolute;
+        right: 0px;
+    }
+    .notification-btn {
+        padding: 15px;
+        position: relative;
+    }
+    .dropdown-menu .dropdown-menu-right .navbar-nav .dropdown-menu {
+        position: absolute;
+        float: none;
+    }
+
+    .homepage__banner-left-block h1 {
+        font-size: 40px;
+    }
+    .homepage__banner-left-block h3 {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .homepage__banner-left-block h4 {
+        font-size: 23px;
+        margin-top: -10px;
+    }
+
+    .homepage__banner-left-block {
+        position: absolute;
+        margin: 0;
+        color: white;
+        left: 30%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+    }
+
+    .homepage__match-result-card {
+        width: 95%;
+    }
+    .homepage__single-user-match-name .str  i {
+        font-size: 13px;
+        margin: -1px;
+    }
+
+    .homepage__single-user-match-message img {
+        width: 23px;
+    }
+    .homepage__single-user-icon-match-lb img {
+        width: 30px;
+    }
+    .leader-board .homepage__single-user-icon-match-lb {
+        width: 10%;
+    }
+    .leader-board .homepage__single-user-match-message {
+        width: 13%;
+    }
+    .leader-board .homepage__single-user-match-name {
+        width: 55%;
+        margin-left: 5px;
+    }
+    .leader-board .homepage__single-user-match-image {
+        width: 20%;
+    }
+
+    /* leader-board */
+    .leader-board .homepage__single-user-rate {
+        width: 22%;
+    }
+    .leader-board .homepage__single-user-name {
+        width: 48%;
+        line-break: anywhere;
+    }
+    .leader-board .homepage__single-user-image {
+        width: 13%;
+    }
+    .leader-board .homepage__single-user-rate {
+        width: 25%;
+    }
+
+    .homepage__single-user-name p {
+        font-size: 16px;
+        color: #fff;
+        margin: 16px 14px;
+    }
+    .homepage__single-user-rate p {
+        color: #fff;
+        font-size: 16px;
+        margin: 0px 0px 0px -7px;
+    }
+    .homepage__single-user-match-name p {
+        margin-top: 7px;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .navbar-nav  .notification-dropdown {
+        min-width: 380px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 15px 15px 20px;
+        position: absolute;
+        right: -90px;
+    }
+
+    .homepage__more-contact-content-field {
+        padding: 0px;
+    }
+
+    .homepage__more-menu li a {
+        color: #d3f7d4;
+        font-size: 18px;
+        margin: 9px;
+    }
+    .homepage__more-contact {
+        max-width: 100%;
+    }
+    .homepage__more .homepage__title {
+        margin: 20px;
+    }
+    .homepage__connect-social h3 {
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .homepage__crypto-content-field h5 {
+        font-size: 50px;
+    }
+
+    .homepage__AboutUs_Content {
+        padding: 10px;
+    }
+    .homepage__About p {
+        text-align: justify;
+    }
+
+
+    
+
+}
+
+
+
+@media (max-width: 767px) {
+    .logo img {
+        width: 65px;
+    }
+}
+
+  
+
+
+@media (max-width: 600px) {
+   
+
+    .nav-content {
+        justify-content: end;
+        position: relative;
+    }
+    .login-drop .dropdown-profile {
+        min-width: 335px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 12px 0 20px;
+        position: absolute;
+        right: 0px;
+    }
+    .logo img {
+        width: 60px;
+    }
+
+    .homepage__banner-left-block h1 {
+        font-size: 20px;
+    }
+    .homepage__banner-left-block h3 {
+        font-size: 17px;
+        margin-top: -10px;
+    }
+    .homepage__banner-left-block h4 {
+        font-size: 15px;
+        width: 235px;
+        margin-top: -10px;
+    }
+
+    .homepage__banner-left-block {
+        position: absolute;
+        margin: 0;
+        color: white;
+        left: 40%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    }
+    .homepage__title-menu-content li a {
+        font-size: 20px;
+    }
+
+
+    .navbar-nav  .notification-dropdown {
+        min-width: 380px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 15px 15px 20px;
+        position: absolute;
+        right: -90px;
+    }
+    
+
+  
+}
+
+
+@media (max-width: 375px) {
+    .navbar-nav  .notification-dropdown {
+        min-width: 350px;
+        border: 1px solid #108a3d;
+        background-color: #292B28;
+        padding: 15px 15px 20px;
+        position: absolute;
+        margin-right: 0px;
+    }
+  
+    .homepage__banner-button-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage__banner-button-block .homepage__how-it-works {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .homepage__crypto-content-field img {
+        width: 17%;
+    }
+    
+    .homepage__crypto-content-field h5 {
+        margin-top: 15px;
+        font-size: 33px;
+    }
+
+    .homepage__crypto-content-field {
+        padding: 10px;
+    }
+
+
+    .homepage__connect-social a svg {
+        margin: 7px;
+    }
+    .homepage__connect-social h3 {
+        color: #1df05b;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .homepage__more-contact .homepage__title {
+        font-size: 20px;
+    }
+    .homepage__connect-social .homepage__title {
+        margin-bottom: 15px;
+    }
+    .homepage__connect-social{
+        margin-bottom: 15px;
+    }
+    .homepage__title-menu-content li a {
+        font-size: 33px;
+    }
+    .homepage__title-menu-content li {
+        padding: 0px;
+    }
+    .homepage__About p {
+        color: #fff;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .homepage__AboutUs_Content {
+        padding: 20px;
+    }
+    .homepage__About {
+        max-width: 100%;
+    }
+}
+
